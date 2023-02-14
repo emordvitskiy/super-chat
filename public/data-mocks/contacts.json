@@ -1,0 +1,50 @@
+[
+  {
+    "user_id": "edec8818-71a2-456a-a424-599d74e52f30",
+    "avatar_url": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=160",
+    "user_name": "Collin Bentley",
+    "phone": "80105"
+  },
+  {
+    "user_id": "7b3df32f-493c-4dd4-990f-33a81f7dcc1a",
+    "avatar_url": null,
+    "user_name": "John Snow",
+    "phone": "80260"
+  },
+  {
+    "user_id": "5ac660f3-3675-43a4-ade7-892130c98c98",
+    "avatar_url": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2019/08/zbasich-user-avatar-160x160.jpg",
+    "user_name": "Lawrence Benekki",
+    "phone": "80137"
+  },
+  {
+    "user_id": "8c87e30f-01d8-4629-b275-a300383b969f",
+    "avatar_url": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2019/08/rvanderknyff-user-avatar-160x160.jpg",
+    "user_name": "Paul Shaft",
+    "phone": "80589"
+  },
+  {
+    "user_id": "7d26a0ce-cf93-425b-b410-e91bf95efbf0",
+    "avatar_url": null,
+    "user_name": "William Radke",
+    "phone": "80670"
+  },
+  {
+    "user_id": "c9b3579c-61d2-49f1-8bb0-1f2c34874a27",
+    "avatar_url": null,
+    "user_name": "Bob Dilan",
+    "phone": "80542"
+  },
+  {
+    "user_id": "ffa992fe-b718-4864-8849-520fb18db574",
+    "avatar_url": null,
+    "user_name": "Peter Bolower",
+    "phone": "80221"
+  },
+  {
+    "user_id": "132df9de-3e85-4677-9d60-e84b72fdfa64",
+    "avatar_url": null,
+    "user_name": "Sam Libhe",
+    "phone": "80912"
+  }
+]

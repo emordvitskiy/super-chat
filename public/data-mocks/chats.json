@@ -1,0 +1,52 @@
+[
+  {
+    "chat_id": "33297c4b-dc09-45ba-9d36-c37403e7a164",
+    "user_id": "edec8818-71a2-456a-a424-599d74e52f30",
+    "avatar_url": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=160",
+    "user_name": "Collin Bentley",
+    "last_message": {
+      "content": "Your forgot laptop in the office. Take it today",
+      "timetamp": 1673384595000
+    }
+  },
+  {
+    "chat_id": "e523b56f-e4ac-4870-b2fd-cdd71e491baf",
+    "user_id": "7b3df32f-493c-4dd4-990f-33a81f7dcc1a",
+    "avatar_url": null,
+    "user_name": "John Snow",
+    "last_message": {
+      "content": "Hey, how are you? Maybe Some beer today?",
+      "timetamp": 1675325341000
+    }
+  },
+  {
+    "chat_id": "ac7f13a0-6ba6-4374-ab78-5c5a79acc547",
+    "user_id": "5ac660f3-3675-43a4-ade7-892130c98c98",
+    "avatar_url": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2019/08/zbasich-user-avatar-160x160.jpg",
+    "user_name": "Lawrence Benekki",
+    "last_message": {
+      "content": "I will be near you in 5 minutes",
+      "timetamp": 1674478973000
+    }
+  },
+  {
+    "chat_id": "7d2d9007-d429-4c69-b8e9-4073b387ce95",
+    "user_id": "8c87e30f-01d8-4629-b275-a300383b969f",
+    "avatar_url": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2019/08/rvanderknyff-user-avatar-160x160.jpg",
+    "user_name": "Paul Shaft",
+    "last_message": {
+      "content": "Ok, bye",
+      "timetamp": 1673518624000
+    }
+  },
+  {
+    "chat_id": "8ec2b894-009f-4694-911b-f3089fa92d46",
+    "user_id": "7d26a0ce-cf93-425b-b410-e91bf95efbf0",
+    "avatar_url": null,
+    "user_name": "William Radke",
+    "last_message": {
+      "content": "No way. I won't do it",
+      "timetamp": 1674552084000
+    }
+  }
+]
