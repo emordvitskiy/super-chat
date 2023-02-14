@@ -1,0 +1,14 @@
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.text-container textarea {
+  margin-bottom: 12px;
+}
+
+.text-container button {
+  max-width: 120px;
+  align-self: end;
+}
