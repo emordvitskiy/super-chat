@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Message } from '../../types';
+import { Message, MessageStatus } from '../../types';
+import { Page } from '../../components/Page';
 import { Textarea } from '../../components/Textarea';
 import { MessagesArea } from '../../components/MessagesArea';
 
@@ -12,6 +13,7 @@ export function ChatScreen() {
       text: val,
       timestamp: Date.now(),
       isMy: true,
+      status: MessageStatus.Sending,
     };
     const sendMyMessageTime = 1000 * (4.5 * Math.random() + 0.5);
 
@@ -26,11 +28,12 @@ export function ChatScreen() {
       const sendBackMessageTime = 1000 * (8 * Math.random() + 2);
 
       setTimeout(() => {
-        const backMessage:Message = {
+        const backMessage: Message = {
           id: `${Math.random()}`,
           text: `${Math.random()}`,
           timestamp: Date.now(),
           isMy: false,
+          status: MessageStatus.Unread,
         };
 
         setMessages((prevState) => {
@@ -44,9 +47,9 @@ export function ChatScreen() {
   };
 
   return (
-    <div>
+    <Page>
       <MessagesArea messages={messages} />
       <Textarea sendMessage={sendMessage} />
-    </div>
+    </Page>
   )
 }

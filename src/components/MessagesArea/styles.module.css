@@ -1,0 +1,12 @@
+.messages_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 12px 8px;
+  background-color: lightskyblue;
+}
+
+.not-empty {
+  justify-content: flex-end;
+}

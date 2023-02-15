@@ -1,29 +1,27 @@
-import { Message } from '../../types';
+import cx from 'classnames';
 
-import './styles.css';
+import { Message } from '../../types';
+import { EmptyMessages } from './EmptyMessages';
+import { MessageBox } from './MessageBox';
+
+import styles from './styles.module.css';
 
 interface MessagesAreaProps {
   messages: Message[];
 }
 
 export function MessagesArea({ messages }: MessagesAreaProps) {
-  if (messages.length === 0) {
-    return (
-      <div className='messages_container'>
-        <div className='empty-message'>There is no messages yet</div>
-      </div>
-    )
-  }
+  const isEmpty = messages.length === 0;
 
   return (
-    <div className='messages_container'>
-      {messages.map(({ id, text, isMy }) => {
-        const class_names = `message-container ${isMy ? 'my-message' : 'not-my-message'}`;
-
-        return (
-          <div key={id} className={class_names}>{text}</div>
-        );
-      })}
+    <div className={cx(styles['messages_container'], !isEmpty && styles['not-empty'])}>
+      {
+        (!isEmpty)
+          ? messages.map(
+            ({ id, ...messageBoxProps }) => (<MessageBox key={id} {...messageBoxProps} />)
+          )
+          : <EmptyMessages />
+      }
     </div>
   );
 }

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { ChangeEvent, KeyboardEvent } from 'react';
+
+import { KEY_ENTER } from '../../constants';
 
 import './styles.css';
 
@@ -9,32 +11,38 @@ interface TextareaProps {
 export function Textarea({ sendMessage }: TextareaProps) {
   const [value, setValue] = React.useState<string>();
 
+  const isValueEmpty = value === undefined || value === '';
+
   const handleSubmit = () => {
-    if (value !== '' && value !== undefined) {
+    if (!isValueEmpty) {
       sendMessage(value);
       setValue('');
-    } else {
-      // Show that empty message is not allowed
     }
   }
 
-  // @TODO fix any
-  const handleEnterPress = (event: any) => {
+  const handleEnterPress = (event: KeyboardEvent<HTMLTextAreaElement>) => {
 
-    if (event.key === 'Enter') {
+    if (event.key === KEY_ENTER) {
       handleSubmit();
     }
   };
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     const inputVal = event.target.value;
     setValue(inputVal);
   };
 
   return (
-    <div className='text-container'>
-      <textarea placeholder='Type a message' value={value} onChange={handleChange} onKeyUp={handleEnterPress} />
-      <button onClick={handleSubmit}>Send message</button>
+    <div className="text-container">
+      <textarea
+        placeholder="Type a message"
+        value={value}
+        onChange={handleChange}
+        onKeyUp={handleEnterPress}
+      />
+      <button onClick={handleSubmit} disabled={isValueEmpty}>
+        Send message
+      </button>
     </div>
   )
 }

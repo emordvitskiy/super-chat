@@ -1,0 +1,13 @@
+.message-container {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.my-message {
+  align-self: end;
+}
+
+.not-my-message {
+  align-self: start;
+}

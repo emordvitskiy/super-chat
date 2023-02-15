@@ -5,7 +5,10 @@
 }
 
 .text-container textarea {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  resize: none;
+  border-radius: 4px;
 }
 
 .text-container button {
