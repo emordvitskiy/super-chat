@@ -3,7 +3,10 @@ import styles from './styles.module.css';
 export function Search() {
   return (
     <div className={styles['search-container']}>
-      <input type="text" placeholder="Search" />
+      <div className={styles['search-wrap']}>
+        <div className={styles['icon-wrap']} />
+        <input type="text" placeholder="Search" />
+      </div>
     </div>
   );
 }
