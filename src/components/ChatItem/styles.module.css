@@ -1,0 +1,39 @@
+.chat-item-container {
+  max-width: 360px;
+  width: 100%;
+  margin: 8px 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.text-container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  display: flex;
+  flex-basis: 48px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+}
+
+.avatar-img {
+  background-size: cover;
+}
+
+.avatar-letter {
+  background-color: red;
+}

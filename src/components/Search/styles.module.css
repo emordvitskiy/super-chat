@@ -1,0 +1,27 @@
+.search-container {
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #555;
+}
+
+.search-container input {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding:16px 24px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.search-container input:after {
+  position: absolute;
+  content: '';
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  z-index: 1;
+}
