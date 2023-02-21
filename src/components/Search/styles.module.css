@@ -1,0 +1,39 @@
+.search-container {
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #555;
+}
+
+.search-wrap {
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search-wrap input {
+  width: 100%;
+  padding: 16px 24px 16px 48px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.icon-wrap {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrap::after {
+  content: '';
+  background-image: url(https://www.svgrepo.com/show/19021/search.svg);
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}

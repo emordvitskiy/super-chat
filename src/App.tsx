@@ -1,10 +1,8 @@
-import React from 'react';
-
-import { ChatScreen } from './pages/ChatScreen';
+import { ChatsList } from './pages/ChatsList';
 
 function App() {
   return (
-    <ChatScreen />
+    <ChatsList />
   );
 }
 
