@@ -7,12 +7,14 @@
   align-items: center;
   border: 1px solid black;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .text-container {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: black;
 }
 
 .avatar {
