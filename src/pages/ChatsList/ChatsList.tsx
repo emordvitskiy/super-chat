@@ -1,4 +1,4 @@
-import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 import { TChatItem } from '../../types';
 import { Page } from '../../components/Page';
@@ -8,21 +8,8 @@ import { ChatItem } from '../../components/ChatItem';
 import styles from './styles.module.css';
 
 export function ChatsList() {
-  const [chats, setChats] = React.useState<TChatItem[]>([]);
+  const chats = useLoaderData() as TChatItem[];
   const isEmpty = chats.length === 0;
-
-  React.useEffect(() => {
-    // handle error
-    fetch('/data-mocks/chats.json')
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-      })
-      .then((result) => {
-        setChats(result);
-      })
-  }, []);
 
   return (
     <Page>
@@ -31,11 +18,11 @@ export function ChatsList() {
         {
           isEmpty
             ? (
-              <div>Loading...</div>
+              <div>You don't have conversations yet</div>
             )
             : (
               chats.map(
-                ({ chat_id, ...props }: TChatItem) => (<ChatItem key={chat_id} {...props} />)
+                (item: TChatItem) => (<ChatItem key={item.chat_id} {...item} />)
               )
             )
         }
